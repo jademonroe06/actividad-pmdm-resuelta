@@ -11,6 +11,7 @@ import es.fpsumma.dam2.utilidades.ui.navigation.AppNavHost
 import es.fpsumma.dam2.utilidades.ui.theme.UtilidadesTheme
 //import es.fpsumma.dam2.utilidades.ui.viewmodel.TareasViewModel
 import es.fpsumma.dam2.utilidades.ui.viewmodel.NotasViewModel
+import es.fpsumma.dam2.utilidades.ui.viewmodel.TareasViewModel
 
 
 class MainActivity : ComponentActivity() {
@@ -27,8 +28,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyApp() {
     val navController = rememberNavController()
-    val notasViewModel: NotasViewModel = viewModel()
+    val tareasViewModel: TareasViewModel = viewModel()
     UtilidadesTheme {
-        AppNavHost(navController = navController, notasViewModel)
+        AppNavHost(navController = navController, tareasViewModel)
     }
 }

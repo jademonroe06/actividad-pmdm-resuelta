@@ -1,5 +1,12 @@
 package es.fpsumma.dam2.utilidades.model
 
+data class Tarea(
+    val id: Int,
+    val titulo: String,
+    val descripcion: String
+)
+
+/*
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -30,3 +37,4 @@ data class Tarea(
     @ColumnInfo(name = "categoria")
     val categoria: String? = null
 )
+ */
